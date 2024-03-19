@@ -1,7 +1,13 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import sqlite3
+from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__,  static_url_path='/static')
+CORS(app)
+
+@app.route('/')
+def index():
+    return render_template('index.html')
 
 def dict_from_row(row):
     return dict(zip(row.keys(), row))
