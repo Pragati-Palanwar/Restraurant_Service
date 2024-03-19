@@ -1,13 +1,13 @@
 {
 	"info": {
 		"_postman_id": "37bd7abf-98fa-42f1-96dd-35e5351678b7",
-		"name": "Restraurant_Service",
+		"name": "Restraurant_Management_System",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "26580138"
 	},
 	"item": [
 		{
-			"name": "Create Product",
+			"name": "Create item",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -38,7 +38,7 @@
 			"response": []
 		},
 		{
-			"name": "Product List",
+			"name": "Whole Menu",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -46,7 +46,7 @@
 			"response": []
 		},
 		{
-			"name": "One Product",
+			"name": "One item",
 			"request": {
 				"method": "GET",
 				"header": []
@@ -54,7 +54,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Product",
+			"name": "Update item",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -86,7 +86,7 @@
 			"response": []
 		},
 		{
-			"name": "Delete Product",
+			"name": "Delete item",
 			"request": {
 				"method": "DELETE",
 				"header": [],
