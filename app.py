@@ -110,6 +110,16 @@ def list_orders():
     conn.close()
     return jsonify(orders)
 
+@app.route('/orders/<int:order_id>', methods=['DELETE'])
+def delete_order(order_id):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('DELETE FROM orders WHERE id=?', (order_id,))
+    conn.commit()
+    conn.close()
+    return jsonify({'message': 'Order Delievered'})
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
